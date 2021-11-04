@@ -136,7 +136,7 @@ api.add_resource(Customers,'/customers')
 def index():
     if request.method == "GET":
     #return jsonify(calculateShortest([1,2],[2,7]))
-        return jsonify("<p>Hello, World!</p>")
+        return jsonify("Grab Driver API Clone")
 
 
 @app.errorhandler(404)
