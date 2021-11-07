@@ -90,7 +90,7 @@ class Drivers(Resource):
         willDriveDistance = willDriveDist(
             [new_data['customerLocation']['x'],new_data['customerLocation']['y']],
             [new_data['customerDestination']['x'],new_data['customerDestination']['y']])
-        #customers.append(new_data)
+        
         carCapacity = new_data['customerGuestCount']
         return jsonify({
             '01_nearestDriver':driverFound,
